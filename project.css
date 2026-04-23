@@ -16,7 +16,7 @@ body {
 .navbar-light .navbar-brand {
   /* font-family: "Brush Script MT"; */
   /* margin-bottom: 3px; */
-  font-family: "Lovely Home";
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   font-weight: bold;
   color: #351458;
@@ -24,7 +24,7 @@ body {
 @media only screen and (max-width: 764px) {
   .brand-name,
   .navbar-light .navbar-brand {
-    font-family: "Lovely Home";
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: bold;
     color: #351458;
@@ -91,13 +91,37 @@ body {
 .iconify {
   width: 40px;
   height: 40px;
-  float: right;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.iconify:hover {
+  transform: scale(1.1);
+}
+
+.project-tools {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 8px;
+  margin-top:8px;
 }
 
 .project-text {
   color: #868e96;
   font-family: "Montserrat";
   font-weight: 300;
+  line-height: 1.6;
+  padding-left: 18px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.project-text li {
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 764px) {
